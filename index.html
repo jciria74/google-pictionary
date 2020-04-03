@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drawing with Google AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/iziToast.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <div class="no-mobile">
+      <p>You are using a phone browser.</p>
+      <p>This page works only on desktop browsers.</p>
+      <p>Please, move your ass and go to a desktop computer</p>
+    </div>
+    <div class="overlay">
+      <div class="overlay-text-container">
+        <h1>Let's start drawing!</h1>
+        <p id="message1"></p>
+        <button class="green-button ok-button" type="button" name="ok-button">Let's go!</button>
+      </div>
+    </div>
+    <div class="victory">
+      <h2>You got 15 points! You win!</h2>
+    </div>
+    <div class="gameover">
+      <div class="overlay-text-container">
+        <p>You fail!</p>
+        <p id="pointsscored"></p>
+        <p>Try again?</p>
+        <button class="green-button retry-button" type="button" name="retry">OK!</button>
+      </div>
+    </div>
+    <div class="content-container">
+      <nav class="nav">
+        <div class="point-container">
+          <p id="pointstext">Points: 0</p>
+          <p id="difficultytext">Difficulty: Easy</p>
+        </div>
+        <div class="header-container">
+          <h2>Draw with Google AI</h2>
+          <h2 class="drawthis">Draw a: <span id="picture"></span></h2>
+          <div class="countdown"></div>
+        </div>
+        <div class="button-container">
+          <button class="green-button clear" type="button" name="clean">Delete current draw</button>
+        </div>
+      </nav>
+      <div class="canvas-container">
+        <canvas id="canvas" width="600" height="600"></canvas>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/iziToast.min.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
